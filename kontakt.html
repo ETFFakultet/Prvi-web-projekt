@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<title>Moj profil</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="hr" content="ADD SITE DESCRIPTION">
+		<meta name="author" content="ADD AUTHOR INFORMATION">
+		<meta name="robots" content="index, follow">
+
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<script>
+			function validateForm() {
+				var x = document.forms["myForm"]["Ime"].value;
+				if (x == null || x == "") {
+				alert("Morate napisati ime!");
+				return false;
+				}
+				
+				var x = document.forms["myForm"]["Prezime"].value;
+				if (x == null || x == "") {
+				alert("Morate napisati prezime!");
+				return false;
+				}
+				
+				var x = document.forms["myForm"]["Email"].value;
+				if (x == null || x == "") {
+				alert("Morate napisati e-mail!");
+				return false;
+				}
+				
+				var x = document.forms["myForm"]["Email"].value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+					alert("Not a valid e-mail address");
+					return false;
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<a name="vrh"></a>
+		<div class="container">
+			<div class="header">
+				<a href="korisnik.php"><img src="ikonice/login.png" class="doorlist"/></a>
+				<h2 class="header-heading">Web projekt</h2>
+			</div>
+			<div class="nav-bar">
+				<ul class="nav">
+					<li><button class="dugme"><a href="index.html">Početna</a></button></li>
+					<li><button class="dugme"><a href="fakultet.html">Fakultet</a></button></li>
+					<li><button class="dugme"><a href="privatno.html">Privatno</a></button></li>
+					<li><button class="dugme"><a href="zivotopis.html.">Životopis</a></button></li>
+					<li><button class="dugme"><a href="kontakt.html">Kontakt</a></button></li>
+				</ul>
+			</div>
+			
+			<div class="content">
+				<div class="main">
+			
+			<h1> Kontakt </h1>
+			<hr>
+			<img src="slike/kontakt.jpg"class="slika"/>
+			<h4> Unesite vaše podatke: </h4>
+			<br />
+			
+			<form name="myForm" action="mailto:strahinja944@gmail.com" onsubmit="return validateForm()" method="post" enctype="text/plain" >
+			
+				Ime: <input type="text" name="Ime"> 
+				<br /> <br />
+				Prezime: <input type="text" name="Prezime">
+				<br /> <br />
+				E-mail: <input type="text" name="Email">
+				<br /> <br />
+				Vaše pitanje:
+				<br />
+				<textarea rows="10" cols="50"></textarea>
+				<br /> <br />
+				<input type="submit" name="submit" value="Submit">
+				<br /> <br />
+				<hr>
+			</form>
+				</div>
+			</div>
+			<div class="footer">
+				&copy; Strahinja Negovanović
+				<div class="drustveno">
+				<footer>
+				<a href="https://www.facebook.com/strahinja.negovanovic"><img title="Facebook" src="ikonice/facebook.png" width="35px" height="35px"/></a>
+				<a href="https://twitter.com/Kistras"><img title="Twitter" src="ikonice/twitter.png" width="35px" height="35px"/></a>
+				<a href="https://plus.google.com/u/0/103167825392726927406/posts"><img title="Google" src="ikonice/google.png" width="35px" height="35px"/></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

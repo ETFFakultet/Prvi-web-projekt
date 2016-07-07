@@ -1,0 +1,292 @@
+	body {
+		margin: 0;
+		padding: 0;
+		color: #333;
+		background-color: #239A8C;
+		font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0 0 .5em;
+		font-weight: 500;
+		line-height: 1.1;
+	}
+
+	h1 { 
+		font-size: 2.25em; 
+		text-align: center;
+	} /* 36px */
+
+	h2 { 
+		font-size: 1.75em; 
+	} /* 28px */
+
+	h3 { 
+		font-size: 1.375em; 
+	} /* 22px */
+
+	h4 { 
+		font-size: 1.125em; 
+	} /* 18px */
+
+	h5 { 
+		font-size: 1em; 
+		font-weight: bold;
+	} /* 16px */
+
+	h6 { 
+		font-size: .875em; 
+	} /* 14px */
+
+	p {
+		margin: 0 0 1.5em;
+		line-height: 1.5;
+	}
+
+	hr {
+		height: 0;
+		margin-top: 1em;
+		margin-bottom: 2em;
+		border: 0;
+		border-top: 1px solid #ddd;
+	}
+
+	a:link {
+		color: royalblue; 
+		text-decoration: none;
+	}
+	a:visited {
+		color: #B51E1E; 
+		text-decoration: none;
+	}
+	a:focus {
+		color: black; 
+		text-decoration: none;
+	}
+	a:hover {
+		color: green;
+		border-radius: 20px;
+		text-decoration: none;
+	}
+	a:active {
+		color: orange; 
+		text-decoration: none;
+	}
+
+	.container
+	{
+		max-width: 50em;
+		margin: 0 auto;
+		background-color: #fff;
+	}
+
+	.header
+	{
+		color: #fff;
+		background: #B99014;
+		padding: 1em 1.25em;
+	}
+
+	.header-heading { 
+		margin: 0;
+		padding-left: 30px;
+		text-align: center;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.nav-bar
+	{
+		background: #B51E1E;
+		padding: 0;
+	}
+
+	.content { 
+		padding: 1em 1.25em; 
+		text-align: justify;
+		/*height:100vh;*/
+	}
+
+	.footer
+	{
+		color: #fff;
+		background: #B99014; 
+		padding: 1em 1.25em;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.nav
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.nav li
+	{
+		display: inline;
+		margin: 0;
+	}
+
+	.nav a
+	{
+		display: block;
+		padding: .7em 1.25em;
+		color: #fff;
+		text-decoration: none;
+		border-bottom: 1px solid gray;
+	}
+
+	.nav a:link { 
+		color: white; 
+	}
+
+	.nav a:visited { 	
+		color: white; 
+	}
+
+	.nav a:focus
+	{
+		color: black;
+		background-color: white;
+	}
+
+	.nav a:hover
+	{
+		color: white;
+		background-color: green;
+	}
+
+	.nav a:active
+	{
+		color: white;
+		background-color: red;
+	}
+
+	.dugme{
+		background-color: #B51E1E;
+		font-size: 14px;
+		border-color: #3B0A6F;
+		display: inline-block;
+		padding: 0.5em 2.4em;
+		margin-bottom: 0;
+		font-weight: 400;
+		line-height: 1.2;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid transparent;
+		border-radius: 20px;
+		text-decoration: none;
+	}
+
+	.dugme:hover
+	{
+		color: #fff;
+		background-color: green;
+	}
+
+	.dugme:focus
+	{
+		color: #fff;
+		background-color: black;
+	}
+
+	.dugme:active
+	{
+		color: #fff;
+		background-color: red;
+	}
+
+	.list-inline > li
+	{
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	@media (min-width: 42em)
+	{
+		.header { 
+		padding: 1.5em 3em; 
+		}
+		
+		.nav-bar { 
+		padding: 1em 3em; 
+		}
+		
+		.content { 
+		padding: 2em 3em; 
+		}
+		
+		.footer { 
+		padding: 2em 3em;
+		}
+		
+		.nav li
+		{
+			display: inline;
+			margin: 0 1em 0 0;
+		}
+		
+		.nav a
+		{
+			display: inline;
+			padding: 0;
+			border-bottom: 0;
+		}
+	}
+
+	.vrh{
+		float: right;
+		border-radius: 5px;
+		text-decoration: none;
+		background-color: #F3E1E1;
+		font-weight: bold;
+	}
+
+	.drustveno{
+		float: right;
+		padding-bottom: 20px;
+	}
+
+	.slika{
+		float: right;
+		height: 300px;
+		width: 250px;
+		padding-top: 50px;
+	}
+
+	.doorlist{
+		height: 35px;
+		width: 35px;
+		float: right;
+	}
+
+	.registracija{
+		text-align: center;
+		background-color: #239A8C;
+		color: white;
+		border-radius: 30px;
+		width: 350px;
+		margin: auto;
+		padding: center;
+		padding-top: 10px;
+	}
+
+	.trailer{
+		font-weight:bold;
+		text-decoration: underline;
+	}
+
+	.podaci{
+		text-align: center;
+	}
+
+	.zaformu{
+		padding-bottom: 10px;
+	}
+
+	.ispis{
+		margin-bottom: 10px;
+		margin-left: 320px;
+	}
